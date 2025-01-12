@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MobileManager.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241223170633_NewMigrate")]
-    partial class NewMigrate
+    [Migration("20250112144932_MobileManager")]
+    partial class MobileManager
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

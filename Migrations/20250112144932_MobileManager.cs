@@ -5,7 +5,7 @@
 namespace MobileManager.Migrations
 {
     /// <inheritdoc />
-    public partial class NewMigrate : Migration
+    public partial class MobileManager : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

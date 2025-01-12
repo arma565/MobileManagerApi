@@ -155,3 +155,4 @@ D:\Applications\WebProgramming\Back\NetCore\Projects\MobileManager\obj\Debug\net
 D:\Applications\WebProgramming\Back\NetCore\Projects\MobileManager\obj\Debug\net9.0\MobileManager.pdb
 D:\Applications\WebProgramming\Back\NetCore\Projects\MobileManager\obj\Debug\net9.0\MobileManager.genruntimeconfig.cache
 D:\Applications\WebProgramming\Back\NetCore\Projects\MobileManager\obj\Debug\net9.0\ref\MobileManager.dll
+D:\Applications\WebProgramming\Back\NetCore\Projects\MobileManager\obj\Debug\net9.0\MobileManager.sourcelink.json

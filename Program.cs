@@ -10,6 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("MobileManagerConnection"));
 });
 builder.Services.AddScoped<MobileManagerService>();
+builder.Services.AddScoped<DatabaseService>();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 

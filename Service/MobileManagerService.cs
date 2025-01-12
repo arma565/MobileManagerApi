@@ -5,11 +5,13 @@ public class MobileManagerService
 {
     private readonly AppDbContext _context;
     private readonly ILogger<MobileManagerService> _logger;
+    private readonly DatabaseService _databaseService;
 
-    public MobileManagerService(AppDbContext context, ILogger<MobileManagerService> logger)
+    public MobileManagerService(AppDbContext context, ILogger<MobileManagerService> logger , DatabaseService databaseService)
     {
         _context = context;
         _logger = logger;
+        _databaseService = databaseService;
     }
 
     #region Mobile
@@ -42,11 +44,12 @@ public class MobileManagerService
     {
         await _context.Mobiles.ExecuteDeleteAsync();
         await _context.SaveChangesAsync();
+        _databaseService.ResetIdentity(nameof(AppDbContext.Mobiles));
     }
     #endregion
 
     #region Accessory
-     public async Task<Accessory?> GetAccessory(int id) =>
+    public async Task<Accessory?> GetAccessory(int id) =>
         await _context.Accessories.AsNoTracking().SingleOrDefaultAsync(a => a.Id == id);
 
     public async Task<IEnumerable<Accessory>> GetAccessories() =>
@@ -75,11 +78,12 @@ public class MobileManagerService
     {
         await _context.Accessories.ExecuteDeleteAsync();
         await _context.SaveChangesAsync();
+        _databaseService.ResetIdentity(nameof(AppDbContext.Accessories));
     }
     #endregion
 
     #region Debtor
-         public async Task<Debtor?> GetDebtor(int id) =>
+    public async Task<Debtor?> GetDebtor(int id) =>
         await _context.Debtors.AsNoTracking().SingleOrDefaultAsync(d => d.Id == id);
 
     public async Task<IEnumerable<Debtor>> GetDebtors() =>
@@ -108,6 +112,7 @@ public class MobileManagerService
     {
         await _context.Debtors.ExecuteDeleteAsync();
         await _context.SaveChangesAsync();
+        _databaseService.ResetIdentity(nameof(AppDbContext.Debtors));
     }
     #endregion
 }
