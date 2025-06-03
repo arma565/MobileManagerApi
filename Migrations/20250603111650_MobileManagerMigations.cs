@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace MobileManager.Migrations
 {
     /// <inheritdoc />
-    public partial class MobileManager : Migration
+    public partial class MobileManagerMigations : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,8 +15,7 @@ namespace MobileManager.Migrations
                 name: "Accessories",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AccessoryType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Quantity = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -31,8 +31,7 @@ namespace MobileManager.Migrations
                 name: "Debtors",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DebtAmount = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -47,8 +46,7 @@ namespace MobileManager.Migrations
                 name: "Mobiles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Brand = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProblemDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),

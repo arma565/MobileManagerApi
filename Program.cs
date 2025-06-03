@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using MobileManager.Data;
+using MobileManager.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,6 @@ builder.Services.AddDbContext<AppDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("MobileManagerConnection"));
 });
 builder.Services.AddScoped<MobileManagerService>();
-builder.Services.AddScoped<DatabaseService>();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 

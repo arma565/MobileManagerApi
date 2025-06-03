@@ -1,11 +1,12 @@
-using Microsoft.AspNetCore.Mvc.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Filters;
-
-public class IgnoreValidationAttributes : ActionFilterAttribute
+namespace MobileManager.Model
 {
-    public override void OnActionExecuted(ActionExecutedContext context)
+    public class IgnoreValidationAttributes : ActionFilterAttribute
     {
-        context.ModelState.Clear();
-        base.OnActionExecuted(context);
+        public override void OnActionExecuted(ActionExecutedContext context)
+        {
+            context.ModelState.Clear();
+            base.OnActionExecuted(context);
+        }
     }
 }

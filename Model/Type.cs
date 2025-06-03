@@ -1,4 +1,8 @@
-enum Type{
-    SOFTWARE,
-    HARDWARE
+namespace MobileManager.Model
+{
+    enum Type
+    {
+        SOFTWARE,
+        HARDWARE
+    }
 }

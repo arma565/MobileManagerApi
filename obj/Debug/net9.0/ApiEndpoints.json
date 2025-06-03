@@ -1,0 +1,314 @@
+[
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetAccessories",
+    "RelativePath": "controller/accessory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MobileManager.Model.Accessory, MobileManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetAccessory",
+    "RelativePath": "controller/accessory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MobileManager.Model.Accessory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "AddAccessory",
+    "RelativePath": "controller/accessory/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessory",
+        "Type": "MobileManager.Model.Accessory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteAccessory",
+    "RelativePath": "controller/accessory/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteAllAccessories",
+    "RelativePath": "controller/accessory/delete/all",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "UpdateAccessory",
+    "RelativePath": "controller/accessory/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessory",
+        "Type": "MobileManager.Model.Accessory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetDebtors",
+    "RelativePath": "controller/debtor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MobileManager.Model.Debtor, MobileManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetDebtor",
+    "RelativePath": "controller/debtor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MobileManager.Model.Debtor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "AddDebtor",
+    "RelativePath": "controller/debtor/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "debtor",
+        "Type": "MobileManager.Model.Debtor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteDebtor",
+    "RelativePath": "controller/debtor/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteAllDebtors",
+    "RelativePath": "controller/debtor/delete/all",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "UpdateDebtor",
+    "RelativePath": "controller/debtor/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "debtor",
+        "Type": "MobileManager.Model.Debtor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetMobiles",
+    "RelativePath": "controller/mobile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MobileManager.Model.Mobile, MobileManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "GetMobile",
+    "RelativePath": "controller/mobile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MobileManager.Model.Mobile",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "AddMobile",
+    "RelativePath": "controller/mobile/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mobile",
+        "Type": "MobileManager.Model.Mobile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteMobile",
+    "RelativePath": "controller/mobile/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "DeleteAllMobiles",
+    "RelativePath": "controller/mobile/delete/all",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MobileManager.Controllers.MobileManagerController",
+    "Method": "UpdateMobile",
+    "RelativePath": "controller/mobile/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mobile",
+        "Type": "MobileManager.Model.Mobile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

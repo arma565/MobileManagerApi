@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
+using MobileManager.Model;
 
-public class AppDbContext : DbContext
+namespace MobileManager.Data
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options)
-        : base(options) { }
-
-    public required DbSet<Mobile> Mobiles { get; set; }
-    public required DbSet<Accessory> Accessories { get; set; }
-    public required DbSet<Debtor> Debtors { get; set; }
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+    {
+        public required DbSet<Mobile> Mobiles { get; set; }
+        public required DbSet<Accessory> Accessories { get; set; }
+        public required DbSet<Debtor> Debtors { get; set; }
+    }
 }

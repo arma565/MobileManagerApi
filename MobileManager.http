@@ -1,6 +1,0 @@
-@MobileManager_HostAddress = http://localhost:5261
-
-GET {{MobileManager_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
